@@ -299,6 +299,14 @@ main ul li {
     padding: 10px;
     cursor: pointer;
 }
+#result {
+    display: none;
+    background-color: #e0f2e0;
+    border: 1px solid #3c763d;
+    padding: 10px;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
 
 /* Submission contact us form */
 .contact-form {

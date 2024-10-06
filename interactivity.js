@@ -27,6 +27,7 @@ document.getElementById('revealButton').addEventListener('click', function() {
 
 // Carbon Footprint Quick Calculator
 function calculateFootprint(event) {
+    console.log('calculateFootprint function called');
     event.preventDefault(); // Prevent form submission
 
     const electricity = parseFloat(document.getElementById('electricity').value) || 0;
@@ -36,7 +37,8 @@ function calculateFootprint(event) {
     // Simplified calculation
     const footprint = (electricity * 0.0005 * 12) + (gas * 0.005 * 12) + (mileage * 0.0004);
     
-    const resultElement = document.getElementById('calculatorResult');
+    console.log('Footprint calculated:', footprint);
+    const resultElement = document.getElementById('result');
     resultElement.textContent = `Your estimated annual carbon footprint is ${footprint.toFixed(2)} metric tons of CO2.`;
     resultElement.style.display = 'block';
 }
@@ -53,14 +55,3 @@ document.addEventListener('DOMContentLoaded', function() {
         calculatorForm.addEventListener('submit', calculateFootprint);
     }
 });
-
-// Contact form submission 
-document.addEventListener('DOMContentLoaded', () => {
-    const form = document.querySelector('form.contact-form');
-    const submissionMessage = document.getElementById('submissionMessage');
-  
-    form.addEventListener('submit', (e) => {
-      submissionMessage.textContent = 'Thank you for submitting your message!';
-      return false;
-    });
-  });
