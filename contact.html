@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoLearn Hub - Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>EcoLearn Hub</h1>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="calculator.html">Carbon Footprint Calculator</a></li>
+                <li><a href="forum.html">Community Forum</a></li>
+                <li><a href="challenge.html">Green Challenge</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="container page-content">
+            <h2>Contact Us</h2>
+            <p>Have questions or feedback? Get in touch with us!</p>
+            <form id="contactForm" class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+            <div id="submissionMessage"></div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 EcoLearn Hub AdeshinaIT371Project. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="interactivity.js"></script>
+</body>
+</html>

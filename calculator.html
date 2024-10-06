@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoLearn Hub - Carbon Footprint Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>EcoLearn Hub</h1>
+            <div id="logo"></div>
+				<a href="/index.html">
+					<img class="logo logo_dark_bg" src="/images/earthlogo.png" alt="logo">
+				</a>
+			</div>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="calculator.html">Carbon Footprint Calculator</a></li>
+                <li><a href="forum.html">Community Forum</a></li>
+                <li><a href="challenge.html">Green Challenge</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="container page-content">
+            <h2>Carbon Footprint Calculator</h2>
+            <p>Use this simple calculator to estimate your annual carbon footprint:</p>
+            <form id="carbonCalculator" class="calculator-form">
+                <label for="electricity">Monthly Electricity Usage (kWh):</label>
+                <input type="number" id="electricity" name="electricity" required>
+                
+                <label for="gas">Monthly Natural Gas Usage (therms):</label>
+                <input type="number" id="gas" name="gas" required>
+                
+                <label for="mileage">Annual Car Mileage:</label>
+                <input type="number" id="mileage" name="mileage" required>
+                
+                <button type="submit">Calculate</button>
+            </form>
+            <div id="result"></div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 EcoLearn Hub AdeshinaIT371Project. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="interactivity.js"></script>
+</body>
+</html>
